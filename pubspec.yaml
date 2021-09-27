@@ -1,7 +1,8 @@
 name: rsa_scan
 description: Scan identity documents such as South African ID Cards, ID Books and Driver's Licenses.
 version: 0.3.0
-homepage: https://github.com/born-ideas/rsa_scan
+homepage: https://github.com/archetype-software/rsa_scan
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -18,9 +19,13 @@ dependencies:
   # See https://pub.dev/packages/firebase_core
   google_ml_kit: ^0.7.0
 
-  # A Flutter plugin for iOS and Android allowing access to the device cameras.
+  # A forked Flutter plugin for iOS and Android allowing access to the device cameras.
   # See https://pub.dev/packages/camera
-  camera: ^0.8.1+3
+  camera: # ^0.8.1+3
+    git:
+      url: https://github.com/ascendedco/plugins.git
+      path: packages/camera/camera
+      ref: mod
 
 dev_dependencies:
   flutter_test:
