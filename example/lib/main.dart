@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
 class IdCardDetailsPage extends StatelessWidget {
   final RsaIdCard rsaIdCard;
 
-  const IdCardDetailsPage({Key key, @required this.rsaIdCard})
+  const IdCardDetailsPage({Key? key, required this.rsaIdCard})
       : super(key: key);
 
   @override
@@ -125,7 +125,7 @@ class IdCardDetailsPage extends StatelessWidget {
 class IdBookDetailsPage extends StatelessWidget {
   final RsaIdBook rsaIdBook;
 
-  const IdBookDetailsPage({Key key, @required this.rsaIdBook})
+  const IdBookDetailsPage({Key? key, required this.rsaIdBook})
       : super(key: key);
 
   @override
@@ -158,7 +158,7 @@ class IdBookDetailsPage extends StatelessWidget {
 class DriversDetailsPage extends StatelessWidget {
   final RsaDriversLicense rsaDrivers;
 
-  const DriversDetailsPage({Key key, @required this.rsaDrivers})
+  const DriversDetailsPage({Key? key, required this.rsaDrivers})
       : super(key: key);
 
   @override
@@ -238,7 +238,7 @@ class DriversDetailsPage extends StatelessWidget {
           Divider(),
           ListTile(
             title:
-                Text('vehicleRestrictions: ${rsaDrivers.vehicleRestrictions}'),
+            Text('vehicleRestrictions: ${rsaDrivers.vehicleRestrictions}'),
           ),
         ],
       ),
