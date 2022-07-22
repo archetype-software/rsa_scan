@@ -1,6 +1,6 @@
 name: rsa_scan
 description: Scan identity documents such as South African ID Cards, ID Books and Driver's Licenses.
-version: 0.3.0
+version: 0.4.0
 homepage: https://github.com/archetype-software/rsa_scan
 publish_to: none
 
