@@ -5,7 +5,7 @@ homepage: https://github.com/archetype-software/rsa_scan
 publish_to: none
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.17.6 <3.0.0"
 
 dependencies:
   flutter:
@@ -16,11 +16,11 @@ dependencies:
   rsa_identification:
     git:
       url: https://github.com/archetype-software/rsa_identification
-      ref: master
+      ref: v2.1.0
 
   # A Flutter plugin to implement google's standalone ml kit made for mobile platform.
   # See https://pub.dev/packages/firebase_core
-  google_ml_kit: ^0.7.0
+  google_mlkit_barcode_scanning: ^0.3.0
 
   # A forked Flutter plugin for iOS and Android allowing access to the device cameras.
   # See https://pub.dev/packages/camera
@@ -28,7 +28,7 @@ dependencies:
     git:
       url: https://github.com/ascendedco/plugins.git
       path: packages/camera/camera
-      ref: mod-0.9.4+5
+      ref: mod-0.10.0
 
 dev_dependencies:
   flutter_test:
