@@ -1,7 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:google_ml_kit/google_ml_kit.dart';
+import 'package:google_mlkit_barcode_scanning/google_mlkit_barcode_scanning.dart';
 import 'package:rsa_identification/rsa_identification.dart';
 import 'package:rsa_scan/rsa_scan.dart';
 
@@ -18,7 +18,7 @@ abstract class RsaScanner extends StatefulWidget {
 
 class _RsaScannerState extends State<RsaScanner> {
   CameraController? _controller;
-  BarcodeScanner _barcodeScanner = GoogleMlKit.vision.barcodeScanner();
+  BarcodeScanner _barcodeScanner = BarcodeScanner(formats: [BarcodeFormat.all]);
   bool _isBusy = false;
   RsaIdDocument? _scannedDocument;
 
@@ -90,12 +90,12 @@ class _RsaScannerState extends State<RsaScanner> {
     }
     final bytes = allBytes.done().buffer.asUint8List();
     final imageSize = Size(image.width.toDouble(), image.height.toDouble());
-    final imageRotation = InputImageRotationMethods.fromRawValue(
+    final imageRotation = InputImageRotationValue.fromRawValue(
             _controller!.description.sensorOrientation) ??
-        InputImageRotation.Rotation_0deg;
+        InputImageRotation.rotation0deg;
     final inputImageFormat =
-        InputImageFormatMethods.fromRawValue(image.format.raw) ??
-            InputImageFormat.NV21;
+        InputImageFormatValue.fromRawValue(image.format.raw) ??
+            InputImageFormat.nv21;
     final planeData = image.planes.map(
       (Plane plane) {
         return InputImagePlaneMetadata(
@@ -126,7 +126,9 @@ class _RsaScannerState extends State<RsaScanner> {
         _scannedDocument = widget.documentFromBarcode(barcode);
         Navigator.of(context).pop(_scannedDocument);
         return;
-      } catch (e) {}
+      } catch (e) {
+        print(e.toString());
+      }
     }
 
     _isBusy = false;
