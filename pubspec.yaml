@@ -28,7 +28,7 @@ dependencies:
     git:
       url: https://github.com/ascendedco/plugins.git
       path: packages/camera/camera
-      ref: mod-0.10.0
+      ref: mod-0.10.1
 
 dev_dependencies:
   flutter_test:
