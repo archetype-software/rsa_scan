@@ -1,6 +1,6 @@
 name: rsa_scan
 description: Scan identity documents such as South African ID Cards, ID Books and Driver's Licenses.
-version: 0.4.3
+version: 0.4.4
 homepage: https://github.com/archetype-software/rsa_scan
 publish_to: none
 
@@ -28,7 +28,7 @@ dependencies:
     git:
       url: https://github.com/archetype-software/plugins.git
       path: packages/camera/camera
-      ref: v0.10.3
+      ref: v0.10.4
 
 dev_dependencies:
   flutter_test:
