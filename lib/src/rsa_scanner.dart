@@ -63,7 +63,7 @@ class _RsaScannerState extends State<RsaScanner> {
     final camera = await availableCameras().then((cameras) =>
         cameras.firstWhere((c) => c.lensDirection == CameraLensDirection.back));
     _controller =
-        CameraController(camera, ResolutionPreset.veryHigh, enableAudio: false);
+        CameraController(camera, ResolutionPreset.max, enableAudio: false);
 
     _controller?.initialize().then((_) {
       if (!mounted) return;
