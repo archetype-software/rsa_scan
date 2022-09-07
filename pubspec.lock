@@ -26,47 +26,47 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/camera/camera"
-      ref: "camera-v0.10.10"
-      resolved-ref: "534722d12f11f9f59b328b81a313a773b750e8f2"
+      ref: "camera-v0.10.11"
+      resolved-ref: f00899ad33c3c9c559ab29f6a00d12dcbab7e609
       url: "https://github.com/archetype-software/plugins.git"
     source: git
-    version: "0.10.10+11"
+    version: "0.10.11+12"
   camera_android:
     dependency: transitive
     description:
       path: "packages/camera/camera_android"
-      ref: "camera_android-v0.10.1"
-      resolved-ref: "374cf653d5f50c9d6632bdf265f48ea76866ff54"
+      ref: "camera_android-v0.10.2"
+      resolved-ref: "60df2aff3a5e4dcd492d61d38f0928dc095df314"
       url: "https://github.com/archetype-software/plugins.git"
     source: git
-    version: "0.10.1+2"
+    version: "0.10.2+3"
   camera_avfoundation:
     dependency: transitive
     description:
       path: "packages/camera/camera_avfoundation"
-      ref: "camera_avfoundation-v0.10.1"
-      resolved-ref: "4e06376e5c33281becde46240ea207e2d52eefb8"
+      ref: "camera_avfoundation-v0.10.2"
+      resolved-ref: c64a7b5ab8688e99a191720601f6e1db6966d77d
       url: "https://github.com/archetype-software/plugins.git"
     source: git
-    version: "0.10.1+5"
+    version: "0.10.2+6"
   camera_platform_interface:
     dependency: transitive
     description:
       path: "packages/camera/camera_platform_interface"
-      ref: "camera_platform_interface-v2.3.0"
-      resolved-ref: "42d7e9dbf1dc174dee10690890f1a3c25656c630"
+      ref: "camera_platform_interface-v2.3.1"
+      resolved-ref: da65f55d15fcb9d874e11aea4039639c2b4a24af
       url: "https://github.com/archetype-software/plugins.git"
     source: git
-    version: "2.3.0"
+    version: "2.3.1"
   camera_web:
     dependency: transitive
     description:
       path: "packages/camera/camera_web"
-      ref: "camera_web-v0.3.1"
-      resolved-ref: "7abf3d800f2a1d27e69a26bd8dfa3da751c2096a"
+      ref: "camera_web-v0.3.2"
+      resolved-ref: "60df2aff3a5e4dcd492d61d38f0928dc095df314"
       url: "https://github.com/archetype-software/plugins.git"
     source: git
-    version: "0.3.1"
+    version: "0.3.2"
   characters:
     dependency: transitive
     description:
