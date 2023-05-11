@@ -1,6 +1,6 @@
 name: rsa_scan
 description: Scan identity documents such as South African ID Cards, ID Books and Driver's Licenses.
-version: 0.4.12
+version: 0.4.13
 homepage: https://github.com/archetype-software/rsa_scan
 publish_to: none
 
@@ -16,7 +16,7 @@ dependencies:
   rsa_identification:
     git:
       url: https://github.com/archetype-software/rsa_identification
-      ref: v2.1.0
+      ref: v2.1.1
 
   # A Flutter plugin to implement google's standalone ml kit made for mobile platform.
   # See https://pub.dev/packages/firebase_core
